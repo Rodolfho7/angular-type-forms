@@ -32,8 +32,6 @@ export class ValidFormComponent implements OnInit {
         Validators.requiredTrue
       ]]
     });
-
-    console.log(this.age);
   }
 
   get email() {

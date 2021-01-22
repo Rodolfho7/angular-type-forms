@@ -1,0 +1,21 @@
+<form [formGroup]="usuarioCadastro">
+  <mat-form-field>
+    <input matInput placeholder="nome" formControlName="nome">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="emprego" formControlName="emprego">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="idade" type="number" formControlName="idade">
+  </mat-form-field>
+
+  <button mat-raised-button (click)="atualizar()" [disabled]="usuarioCadastro.invalid">Atualizar Usuario</button>
+</form>
+
+<app-child></app-child>
+
+<p>
+  {{ usuario | json }}
+</p>

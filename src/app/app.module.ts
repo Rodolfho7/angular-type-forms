@@ -15,6 +15,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     ArrayFormComponent,
     SubmitFormComponent,
     ValidFormComponent,
-    NestedFormComponent
+    NestedFormComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
